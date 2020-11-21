@@ -13,3 +13,4 @@ bundle.bundle(function (err, source) {
   const adapter = fs.readFileSync('node_modules/webrtc-adapter/out/adapter.js').toString();
   fs.writeFileSync('out/simplewebrtc-with-adapter.bundle.js', `${adapter}\n${source}`);
 });
+
